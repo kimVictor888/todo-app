@@ -25,12 +25,15 @@
     "react",
     "jsx-a11y",
     "react-hooks",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "prettier"
   ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/react-in-jsx-scope": 0
+    "react/react-in-jsx-scope": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "prettier/prettier": "error"
   },
   "settings": {
     "react": {
