@@ -1,6 +1,6 @@
-import { AppBar, InputAdornment, Typography } from '@mui/material';
+import { AppBar, InputAdornment } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
-import { StyledTextField, StyledToolbar } from './Header.styles';
+import { StyledTextField, StyledToolbar, StyledTypography } from './Header.styles';
 import { useContext } from 'react';
 import { TodosContext } from '../../context/TodosContext';
 
@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <AppBar position='static'>
       <StyledToolbar>
-        <Typography variant='h6'>TODO Application</Typography>
+        <StyledTypography variant='h6'>TODO Application</StyledTypography>
         <StyledTextField
           variant='outlined'
           size='small'

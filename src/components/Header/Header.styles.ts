@@ -1,4 +1,4 @@
-import { alpha, styled, TextField, Toolbar } from '@mui/material';
+import { alpha, styled, TextField, Toolbar, Typography } from '@mui/material';
 
 export const StyledToolbar = styled(Toolbar)(() => ({
   justifyContent: 'space-between',
@@ -17,5 +17,14 @@ export const StyledTextField = styled(TextField)(({ theme }) => ({
     '& fieldset': {
       border: 'none',
     },
+  },
+  [theme.breakpoints.down('sm')]: {
+    width: '100%',
+  },
+}));
+
+export const StyledTypography = styled(Typography)(({ theme }) => ({
+  [theme.breakpoints.down('sm')]: {
+    display: 'none',
   },
 }));
